@@ -1,6 +1,6 @@
 {
   "name": "worker-man",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A better & simple API to consume worker thread in node.js",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

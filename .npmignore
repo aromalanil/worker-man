@@ -1,0 +1,6 @@
+tsconfig.json
+src
+.github
+.husky
+.eslintrc
+.prettierrc
