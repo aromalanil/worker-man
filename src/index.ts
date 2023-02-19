@@ -1,10 +1,9 @@
 import { isAsyncFunction } from 'util/types';
 import { workerData, parentPort, Worker, isMainThread } from 'worker_threads';
 
-
 /**
  *
- * Return a modified version of a CPU intensive 
+ * Return a modified version of a CPU intensive
  * function, which will run in a worker thread when invoked
  *
  * Example : Creating a worker thread to find fibonacci number
@@ -17,7 +16,7 @@ import { workerData, parentPort, Worker, isMainThread } from 'worker_threads';
  *   if (n < 2) return 1;
  *   else return cpuHeavyFindFibonacci(n - 2) + cpuHeavyFindFibonacci(n - 1);
  * }
- * 
+ *
  * export const findFibonacci = createWorker(__filename, cpuHeavyFindFibonacci);
  *
  * // main.ts
@@ -28,7 +27,7 @@ import { workerData, parentPort, Worker, isMainThread } from 'worker_threads';
  *  console.log(fibonacci);
  * }
  * ```
- * 
+ *
  * @param fileName The path to the file in which worker thread is created
  * @param heavyFunction The CPU intensive function which needs to be parallelized
  */
@@ -43,7 +42,7 @@ export function createWorker<
     else parentPort?.postMessage(heavyFunction(workerData));
 
     // @ts-ignore: Type check is only needed for main thread
-    return;
+    return undefined;
   }
 
   // If called from main thread, return a function to consume the worker

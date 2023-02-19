@@ -1,0 +1,22 @@
+{
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-base",
+      "airbnb-typescript/base",
+      "prettier"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "ignorePatterns": [
+      "/lib/*"
+    ],
+    "rules": {
+      "import/prefer-default-export": "off",
+    }
+  }
