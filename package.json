@@ -1,0 +1,29 @@
+{
+  "name": "worker-man",
+  "version": "0.1.0",
+  "description": "A high level API for worker-thread implementation in node.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -b --clean && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aromalanil/worker-man.git"
+  },
+  "keywords": [
+    "worker-thread",
+    "thread",
+    "asynchronous"
+  ],
+  "author": "Aromal Anil <aromalanilkannan@gmail.com> (https://aromalanil.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aromalanil/worker-man/issues"
+  },
+  "homepage": "https://github.com/aromalanil/worker-man#readme",
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "typescript": "^4.9.5"
+  }
+}
