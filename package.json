@@ -1,14 +1,15 @@
 {
   "name": "worker-man",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A better & simple API to consume worker thread in node.js",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc -b --clean && tsc",
+    "build": "rm -rf lib && tsc",
     "lint": "eslint src/**",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
+    "prepublishOnly" : "npm run build",
     "init": "eslint --init"
   },
   "repository": {
